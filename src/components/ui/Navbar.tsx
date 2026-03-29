@@ -10,6 +10,7 @@ export function Navbar() {
     { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'Dúvidas', href: '#faq' },
     { name: 'Localização', href: '#localizacao' },
+    { name: 'Instagram', href: '#instagram' },
   ]
 
   return (
@@ -22,7 +23,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
         {/* Logo Textual */}
         <div className="text-xl font-bold text-stone-900 tracking-wide">
-          Thuany<span className="text-[#c27355]">Lima</span>
+          Thuany<span className="text-[#c27355]"> Lima</span>
         </div>
 
         {/* Links Desktop (Some no celular para não poluir) */}

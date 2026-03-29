@@ -7,6 +7,7 @@ import { FAQ } from '../sections/FAQ'
 import { Location } from '../sections/Location'
 import { Footer } from '../sections/Footer'
 import { FloatingWhatsApp } from '../components/ui/FloatingWhatsApp'
+import { InstagramGrid } from '@/sections/InstagramGrid'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <div id="depoimentos"><SocialProof /></div>
       <div id="faq"><FAQ /></div>
       <div id="localizacao"><Location /></div>
-
+      <div id="instagram"><InstagramGrid /></div>
       <Footer />
       <FloatingWhatsApp />
     </main>
