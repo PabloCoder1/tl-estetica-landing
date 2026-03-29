@@ -1,26 +1,26 @@
+/* src/app/globals.css */
 @import "tailwindcss";
 
+/* Já vamos preparar as cores bases premium e femininas */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground-rgb: 51, 51, 51; /* Cinza escuro para texto principal */
+  --background-start-rgb: 255, 253, 252; /* Fundo creme suave */
+  --background-end-rgb: 255, 253, 252;
+  
+  --primary: #9B7B61; /* Marrom suave / Nude (Cor premium) */
+  --primary-light: #C0A898; /* Tom mais claro de nude */
+  --accent: #E1BFB1; /* Rosé gold suave (Cor de sotaque) */
+  --text-base: #333333;
+  --text-muted: #666666;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Poppins', sans-serif; /* Sugestão de fonte moderna */
 }
