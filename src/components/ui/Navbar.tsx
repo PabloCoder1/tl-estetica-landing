@@ -7,14 +7,14 @@ export function Navbar() {
   const links = [
     { name: 'Início', href: '#inicio' },
     { name: 'Benefícios', href: '#beneficios' },
-    { name: 'Depoimentos', href: '#depoimentos' },
+    { name: 'Sobre', href: '#sobre' }, // <-- Adicionado para linkar com a seção About
+    { name: 'Resultados', href: '#resultados' },
     { name: 'Dúvidas', href: '#faq' },
     { name: 'Localização', href: '#localizacao' },
-    { name: 'Instagram', href: '#instagram' },
   ]
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -29,8 +29,8 @@ export function Navbar() {
         {/* Links Desktop (Some no celular para não poluir) */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <a 
-              key={link.name} 
+            <a
+              key={link.name}
               href={link.href}
               className="text-stone-600 hover:text-[#c27355] font-medium transition-colors text-sm uppercase tracking-wider"
             >
